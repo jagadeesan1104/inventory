@@ -7,6 +7,7 @@ from frappe import _
 from frappe.model.document import Document
 
 class Bin(Document):
+	#validate for not creating duplicate values
 	def validate(self):
 		if frappe.db.exists('Bin',{'product':self.product,'warehouse':self.warehouse}):
 			frappe.throw(_('Already same Warehouse and Product has been Created '))
