@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-12 21:18:25.929804",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "source_warehouse",
+  "source_open_qty",
+  "source_balance_qty",
+  "target_warehouse",
+  "target_open_qty",
+  "target_balance_qty"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product",
+   "options": "Product"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "columns": 1,
+   "fieldname": "source_open_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Source Open Qty"
+  },
+  {
+   "columns": 1,
+   "fieldname": "source_balance_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Source Balance Qty"
+  },
+  {
+   "columns": 1,
+   "fieldname": "target_balance_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Target Balance Qty"
+  },
+  {
+   "columns": 1,
+   "fieldname": "target_open_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Target Open Qty"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-13 11:42:23.746537",
+ "modified_by": "Administrator",
+ "module": "INVENTORY",
+ "name": "Bin Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
